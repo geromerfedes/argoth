@@ -1,0 +1,154 @@
+$color-bg-app: #ffffff;
+$color-primary: #E9464F;
+$color-on-primary: #fafafa;
+$color-white: #fafafa;
+$color-accent: #1A1A1A;
+$color-on-accent: #ffffff;
+$color-warn: #820024;
+$color-burdeo: #A1405B;
+$color-on-warn: #ffffff;
+$color-whatsapp: #60D669;
+$color-disabled: #dcdcdc;
+$color-on-disabled: #a3a3a3;
+$color-secondary: #ccdcff;
+$color-secondary-accent: #0f172a;
+$navbar-height: 167px;
+
+:root {
+  --color-bg-app: #{$color-bg-app};
+
+  --color-primary: #{$color-primary};
+  --color-on-primary: #{$color-on-primary};
+
+  --color-accent: #{$color-accent};
+  --color-on-accent: #{$color-on-accent};
+
+  --color-warn: #{$color-warn};
+  --color-on-warn: #{$color-on-warn};
+
+  --color-burdeo: #{$color-burdeo};
+
+  --color-white: #{$color-white};
+
+  --navbar-height: #{$navbar-height};
+
+  --color-whatsapp: #{$color-whatsapp};
+
+  --color-disabled: #{$color-disabled};
+  --color-on-disabled: #{$color-on-disabled};
+
+  --color-secondary: #{$color-secondary};
+  --color-secondary-accent: #{$color-secondary-accent};
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-accent);
+  border-radius: 100vw;
+  margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid var(--color-accent);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warn)
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: var(--color-primary) var(--color-accent);
+    scrollbar-width: thin;
+  }
+}
+
+
+/*#region Colors*/
+
+.color-primary {
+  color: var(--color-primary, $color-primary) !important;
+}
+
+.color-on-primary {
+  color: var(--color-on-primary, $color-on-primary) !important;
+}
+
+.color-accent {
+  color: var(--color-accent, $color-accent) !important;
+}
+
+.color-on-accent {
+  color: var(--color-on-accent, $color-on-accent) !important;
+}
+
+.color-warn {
+  color: var(--color-warn, $color-warn) !important;
+}
+
+.color-on-warn {
+  color: var(--color-on-warn, $color-on-warn) !important;
+}
+
+.color-disabled {
+  color: var(--color-disabled, $color-disabled) !important;
+}
+
+.color-on-disabled {
+  color: var(--color-on-disabled, $color-on-disabled) !important;
+}
+
+.color-secondary {
+  color: var(--color-secondary, $color-secondary) !important;
+}
+
+/*#endregion*/
+
+/*#region Background*/
+
+.bg-primary {
+  background-color: var(--color-primary, $color-primary) !important;
+  color: var(--color-on-primary, $color-on-primary) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-accent, $color-accent) !important;
+  color: var(--color-on-accent, $color-on-accent) !important;
+}
+
+.bg-warn {
+  background-color: var(--color-warn, $color-warn) !important;
+  color: var(--color-on-warn, $color-on-warn) !important;
+}
+
+.bg-disabled {
+  background-color: var(--color-disabled, $color-disabled) !important;
+  color: var(--color-on-disabled, $color-on-disabled) !important;
+}
+
+.bg-transparent-primary {
+  background-color: transparent !important;
+  color: var(--color-primary, $color-primary) !important;
+}
+
+.bg-transparent-accent {
+  background-color: transparent !important;
+  color: var(--color-accent, $color-accent) !important;
+}
+
+.bg-transparent-warn {
+  background-color: transparent !important;
+  color: var(--color-warn, $color-warn) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary, $color-secondary) !important;
+  color: var($color-secondary-accent, $color-secondary-accent) !important;
+}
+
+/*#endregion*/

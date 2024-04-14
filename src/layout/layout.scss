@@ -1,0 +1,72 @@
+// Navigation bar
+#aside_argoth {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+  
+    .menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 24px;
+      padding: 16px 0;
+
+      .logo {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        img {
+          padding-left: 20px;
+        }
+      }
+
+      .item {
+        padding: 12px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+
+        a {
+          color: var(--color-white, #FAFAFA);
+          font-family: "Futura";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            background: var(--color-white, #FAFAFA);
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
