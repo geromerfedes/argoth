@@ -2,6 +2,7 @@ $color-bg-app: #ffffff;
 $color-primary: #E9464F;
 $color-on-primary: #fafafa;
 $color-white: #fafafa;
+$color-gray: #333;
 $color-accent: #1A1A1A;
 $color-on-accent: #ffffff;
 $color-warn: #820024;
@@ -25,6 +26,7 @@ $navbar-height: 167px;
 
   --color-warn: #{$color-warn};
   --color-on-warn: #{$color-on-warn};
+  --color-gray: #{$color-gray};
 
   --color-burdeo: #{$color-burdeo};
 

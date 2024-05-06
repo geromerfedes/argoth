@@ -1,0 +1,25 @@
+.hilton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 160px;
+  background: #fafafa;
+
+  .title__hilton {
+    color: var(--abes-com-ar-shark, #292D33);
+    text-align: center;
+    font-family: "Futura-Bold";
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 160px;
+    height: 102.759px;
+    object-fit: contain;
+  }
+}

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import logoArgoth from "../assets/images/domain/logo.png";
 
 const Header = () => {
